@@ -5,14 +5,18 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Narayan Iron - Home</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Narayan Iron & Steel Industries - Nepal - Steel Pipe </title>
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NN7KNR6');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Favicons -->
-  <link href= "{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href= "{% static 'assets/img/logo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/logo.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,18 +31,13 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Flexor - v4.9.1
-  * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
-
-  <!-- ======= Top Bar ======= -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN7KNR6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
@@ -65,7 +64,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+{#          <li><a class="nav-link scrollto" href="#about">About</a></li>#}
           <li><a class="nav-link scrollto " href="#products">Products</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -101,10 +100,10 @@
               <p>
                 Welcome to Narayan Iron & Steel Industries, your one source for all needs.We're dedicated to providing you the very best products, with an emphasis on Quality and Trust. Our Company deals with Manufacturing Iron and Steel Products such as Pipes, Fences, etc.
                   <br><br>
-                  We Believe in providing the the Best Services to our valuable customers.
+                  We Believe in providing the Best Services to our valuable customers.
               </p>
               <div class="text-center">
-                <a href="#about" class="more-btn">About Us <i class="bx bx-chevron-right"></i></a>
+{#                <a href="#about" class="more-btn">About Us <i class="bx bx-chevron-right"></i></a>#}
               </div>
             </div>
           </div>
@@ -128,8 +127,8 @@
                 <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-images"></i>
-                    <h4>Ease of Tracking</h4>
-                    <p>Our web app provides live order tracking services which helps to be up to date.</p>
+                    <h4>Fast Delivery</h4>
+                    <p>Our efficient work environment promotes quality along with speed which helps us to deliver at the fastest.</p>
                   </div>
                 </div>
               </div>
@@ -141,32 +140,6 @@
     </section>
       <!-- End Why Us Section -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
-          </div>
-
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h4 data-aos="fade-up">About us</h4>
-            <h3 data-aos="fade-up">Narayan Iron & Steel Industries</h3>
-            <p data-aos="fade-up">Welcome to Narayan Iron Industries, your one source for all needs.We're dedicated to providing you the very best products, with an emphasis on Quality and Trust.
-                <br><br>
-                Founded in Year 2013 by Mr. Bhawani Singh Rathore [CEO], Narayan Iron Industries has come a long way from its beginning. When Mr. Bhawani first started out, his passion for being an Industrialist drove him to start his own Business.
-                <br><br>
-                We hope you enjoy our product as much as we enjoy offering them to you.
-                <br>
-                Narayan Iron: We Bring Good Things To Life.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-      <!-- End About Section -->
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
@@ -174,7 +147,7 @@
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
             {% for client in clients %}
-              <div class="swiper-slide"><img src="{{ client.image }}" class="img-fluid" alt="{{ client.client_name }}"></div>
+              <div class="swiper-slide"><img src="{{ client.image }}" loading="lazy" class="img-fluid" alt="{{ client.client_name }}"></div>
             {% endfor %}
           </div>
           <div class="swiper-pagination"></div>
@@ -182,31 +155,6 @@
       </div>
     </section>
       <!-- End Clients Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container position-relative" data-aos="fade-up">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="https://narayan-iron.web.app/assets/img/testimonials/ceo.jpeg" class="testimonial-img" alt="">
-                <h3>Bhawani Singh</h3>
-                <h4>CEO &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              In this ever-changing society, the most powerful and enduring brands are built from the heart. They are real and sustainable. Their foundations are stronger because they are built with the strength of the human spirit, not an ad campaign. The companies that are lasting are those that are authentic.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section><!-- End Testimonials Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="products" class="portfolio">
@@ -226,19 +174,16 @@
 
         {% for product in products %}
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <img src="{{ product.image }}" class="img-fluid" alt="">
+            <img src="{{ product.image }}" loading="lazy" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>{{ product.product_name }}</h4>
               <a href="{{ product.image }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ product.product_name }}"><i class="bx bx-plus"></i></a>
             </div>
           </div>
         {% endfor %}
-
         </div>
-
       </div>
     </section><!-- End Portfolio Section -->
-
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -269,6 +214,7 @@
               <p>NarayanIron@gmail.com</p>
             </div>
           </div>
+
           <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
             <div class="info-box">
               <i class="bx bx-phone-call"></i>
@@ -368,7 +314,6 @@
 
   <!-- Vendor JS Files -->
   <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
   <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
   <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
   <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
@@ -376,6 +321,30 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyC2pgHxJ9DaEqbGAPNi3sJHlF3fq19M6Ac",
+    authDomain: "narayan-iron-100.firebaseapp.com",
+    projectId: "narayan-iron-100",
+    storageBucket: "narayan-iron-100.appspot.com",
+    messagingSenderId: "299220953747",
+    appId: "1:299220953747:web:7f256e92c944aedb5f7b66",
+    measurementId: "G-DWVVYYTY3L"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
 </body>
 

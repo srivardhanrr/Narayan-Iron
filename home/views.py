@@ -17,8 +17,10 @@ def home(request):
             contact_form.save()
             email_subject = f'New contact: {contact_form.cleaned_data["email"]}: {contact_form.cleaned_data["subject"]}'
             email_message = f'Name: {contact_form.cleaned_data["name"]} \nMessage: {contact_form.cleaned_data["message"]}'
-            send_mail(email_subject, email_message, settings.CONTACT_EMAIL, ['srivardhan.singh.rathore@gmail.com'], fail_silently=False)
-            send_mail("Narayan Iron", f"Thank you {contact_form.cleaned_data['name']} for Contacting Us. \nWe will revert back to you soon",
+            send_mail(email_subject, email_message, settings.CONTACT_EMAIL, ['srivardhan.singh.rathore@gmail.com'],
+                      fail_silently=False)
+            send_mail("Narayan Iron", f"Thank you {contact_form.cleaned_data['name']} for Contacting Us. \nWe will "
+                                      f"revert back to you soon",
                       settings.CONTACT_EMAIL,
                       [contact_form.cleaned_data["email"]], fail_silently=False)
             return HttpResponse("Success")
@@ -28,9 +30,6 @@ def home(request):
             send_mail("Narayan Iron", "You've Successfully Subscribed to our NewsLetter.", settings.CONTACT_EMAIL,
                       [subscribe_form.cleaned_data['email']], fail_silently=False)
             return HttpResponse("Success")
-
     else:
         context = {"products": products, "clients": clients, "form": contact_form}
         return render(request, "home/index.html", context)
-
-
